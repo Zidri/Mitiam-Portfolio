@@ -1,0 +1,1607 @@
+@import "tailwindcss";
+
+.page-fade-enter-active {
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.a {
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-fade-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-fade-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main1 {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.main2 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;  
+  font-family: 'Poppins', sans-serif;
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  left: 1rem;
+  top: 1rem;
+}
+
+.grid1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2 minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  left: 1rem;
+  top: 1rem;
+   
+}
+ 
+
+.card {
+  background-color: white; 
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25); /* bottom shadow */
+  position: relative;
+  top: -9.5rem;
+  height: 7rem;
+  width: 29rem;
+  left: 19.5rem;
+ border: 2px solid white;
+}
+
+.ijm {
+  position: relative;
+  width: 18rem;
+  top: -2rem;
+  left: -2rem;
+ }
+.card4 {
+  position: relative;
+  background-color: #d81616ff;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25); /* bottom shadow */
+  border-radius: 12px;
+  left: 24rem;
+  bottom: 45rem;
+  height: 43rem;
+}
+ 
+
+.skills {
+  position: relative;
+  background-color: #428A5A;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  left: -25rem;
+  bottom: 30rem;
+  height: 25rem;
+  width: 73rem;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.skills.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.skill-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.skills2 {
+  position: relative;
+  background-color: #291914;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25); /* bottom shadow */
+  border-radius: 20px;
+  left: 53rem;
+  bottom: 47.5rem;
+  height: 250px;
+  width: 27rem;
+}
+.skills2 h1 {
+position: relative;
+color: white;
+margin-top: 7.5rem;
+ text-align: left;
+ font-weight: bold;
+ margin-left: -30px;
+font-family: 'Poppins', sans-serif;
+}
+
+.underline1 {
+  width: 75px;
+  height: 4px;
+  background-color: white;
+  margin: 10px 0 23px;
+  border-radius: 2px;
+}
+.skill-box {
+  display: flex;
+  flex-direction: column;   /* icon above text */
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 4px;
+  text-align: center;
+  width: 80%;
+  font-size: 1.05rem;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition-delay: 0s;
+
+}.skills.show .skills-grid .skill-box {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skills.show .skills-grid .skill-box:nth-child(1) { transition-delay: 0.1s; }
+.skills.show .skills-grid .skill-box:nth-child(2) { transition-delay: 0.2s; }
+.skills.show .skills-grid .skill-box:nth-child(3) { transition-delay: 0.3s; }
+.skills.show .skills-grid .skill-box:nth-child(4) { transition-delay: 0.4s; }
+.skills.show .skills-grid .skill-box:nth-child(5) { transition-delay: 0.5s; }
+.skills.show .skills-grid .skill-box:nth-child(6) { transition-delay: 0.6s; }
+.skills.show .skills-grid .skill-box:nth-child(7) { transition-delay: 0.7s; }
+.skills.show .skills-grid .skill-box:nth-child(8) { transition-delay: 0.8s; }
+.skill-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.skill-box:hover {
+  animation: pulse 0.5s;
+  background-color: #111;
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.2);
+}
+
+.skill-box i {
+  font-size: 2rem;
+  opacity: 0.85;
+}
+
+.iconify {
+  font-size: 1.6rem;
+}
+
+.mobileh3{
+  display: none;
+}
+
+.skills-grid {
+  position: relative;
+  bottom: -2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  left: 1.5rem;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+  @keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card5 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 12px 18px rgba(0,0,0,0.25);
+  border-radius: 20px;
+  left: -25rem;
+  bottom: 27rem;
+  height: 30rem;
+  width: 73rem;
+
+  /* Slide-in initial state for outer <Transition> */
+  opacity: 1;
+  transform: translateY(0);
+ 
+}
+/* Make image behave like background-cover */
+.card5-img {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills container, crops if needed */
+  object-position: center; /* centers image */
+       /* behind any content */
+}
+
+.card-inner {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+
+}
+
+.card-inner.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide Transition for outer <Transition> */
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide-left-enter-from {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.slide-left-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-left-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-left-leave-to {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.slide-right-enter-from {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.slide-right-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-right-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-right-leave-to {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+/* Pagination corner */
+.paginationcorner2 {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 16px;
+}
+
+.paginationcorner2 button {
+  background: black;
+  border: none;
+  width: 50px;
+  height: 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.4;
+}
+
+.paginationcorner2 button:hover {
+  transform: scaleX(1.2);
+}
+
+.paginationcorner2 button.active {
+  background: white;
+  opacity: 1;
+  transform: scaleX(1.2);
+}
+
+
+.card6 {
+  position: relative;
+  background-color: #4646bd;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25); /* bottom shadow */
+  border-radius: 20px;
+  left: 53rem;
+  bottom: 59rem;
+  height: 250px;
+  width: 27rem;
+}
+.card6 h1 {
+color: white;
+margin-top: 5rem;
+ 
+ font-weight: bold;
+ margin-left: -28px;
+ text-align: left;
+
+}
+
+.pin-emoji {
+  position: absolute;
+  top: -35px;
+  right: -40px;
+  font-size: 64px;
+  transform: rotate(15deg); /* Adjust angle if needed */
+  z-index: 10;
+}
+
+.card3 {
+  position: relative;
+  left: -22.75rem;
+
+  width: 42rem;
+  height: 250px;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  background-image: url("@/assets/y.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* hover image overlay */
+.card3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("@/assets/hover.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* fade in */
+.card3:hover::before {
+  opacity: 1;
+}
+
+.card2 {
+  background-color: #030913;
+  border-radius: 20px;
+  height: 25rem;
+  width: 40rem;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  
+}
+
+.card1 {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+   
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  border: 3px solid black;
+  height: 250px;
+  
+}
+
+.hi{
+  margin-top: 1.9rem;
+font-weight: 600;
+font-size: 2.95rem;
+ text-align: center;
+}
+
+.perspect {
+ color: white;
+ margin-top: 8.75rem;
+ text-align: left;
+ font-weight: bold;
+ margin-left: -30px;
+}
+.perspect1 {
+ color: white;
+ margin-top: 0;
+ text-align: left;
+ margin-left: -30px;
+
+}
+
+.perspect,
+.perspect1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+/* text color change on hover */
+.card3:hover .perspect,
+.card3:hover .perspect1 {
+  color: white;
+}
+.card1,
+.card2 {
+  margin-left: 0;        /* reset if any */
+  transform: translateX(-400px);
+}
+.card1 h1 {
+  margin-top: 15px;
+  margin-right: -24px;
+}
+.card2 h3 {
+
+  text-align: left;
+  font-size: x-large;
+  color: white;
+  
+}
+
+.card2 p{
+margin-top: 20px;
+  text-align: left;
+  font-size: large;
+  color: white;
+  line-height: 1.5;
+  
+}
+.card4 h3 {
+ margin-top: 55px;
+  text-align: left;
+  font-size: x-large;
+  color: black;
+  font-weight: bold;
+  
+}
+
+
+.industry {
+margin-top: 20px;
+  text-align: left;
+  font-size: large;
+  color: black;
+  line-height: 1.5;
+  
+}
+.industry1 {
+margin-top: 5px;
+  text-align: left;
+  font-size: large;
+  color: black;
+  line-height: 1.5;
+  position: relative;
+  
+}
+.industry2 {
+margin-top: 5px;
+  text-align: left;
+  font-size: large;
+  color: black;
+  line-height: 1.5;
+  position: relative;
+  
+}
+.card h3 {
+  font-weight: bold;
+  text-align: left;
+  font-size: x-large;
+  color: white;
+  
+}
+.title-box {
+  position: absolute;
+  top: 50px;
+  left: 3rem;
+  background-color: #000;
+  padding: 8px 14px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+  padding-right: 6px;
+}
+
+.title-box h3 {
+  color: #fff;
+  margin: 0;
+  
+  position: relative;
+  left: -6px;
+}
+.card p{
+ margin-top: 30px;
+  text-align: left;
+  font-size: large;
+  color: white;
+  line-height: 1.5;
+  
+}
+.profile-img,
+.project-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links {
+  margin-top: -1.75rem;
+}
+
+.social-links a {
+  margin: 0 2rem;
+  font-size: 3rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077b5; /* Customize per platform if desired */
+}
+.underline {
+  width: 180px;
+  height: 4px;
+  background-color: yellow;
+  margin: 2px 0 10px;
+  border-radius: 2px;
+}
+
+.underline3 {
+  width: 250px;
+  height: 4px;
+  background-color: #151517;
+  margin: 10px 0 20px;
+  border-radius: 2px;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.skills-list li {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.skills-list i {
+  font-size: 1.4rem;
+  color: black;
+}
+
+
+.pagination.corner {
+  position: absolute;
+  top: 2.75rem;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.pagination.side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pagination button {
+  color: yellow;
+  font-size: 1.4rem;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.pagination button:hover {
+  opacity: 0.4;
+  
+}
+.pagination button:disabled {
+  opacity: 0.4;
+  
+}
+
+.page-number {
+  margin-top: 0rem;
+  color: white;
+  font-size: 1.2rem;
+  
+}
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(5px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.4s ease;
+}
+
+.pagination.corner1 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.pagination.corner1 button {
+  background: white;
+  border: 2px;
+  border-radius: 4px;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.pagination.corner1 button {
+  display: flex;
+  flex-direction: column-reverse; /* text above icon */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 0.8rem;
+  padding: 5px 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.pagination.corner1 button:hover {
+  background: black;
+  opacity: 0.6;
+}
+
+.pagination.corner1 button:disabled {
+  background: black;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.view-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 13.05rem;         /* distance from bottom */
+  left: 90%;             /* center horizontally */
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6); /* dark rectangle */
+  color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 4px;    /* slightly rounded corners */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+     
+  text-align: center;
+  z-index: 10;           /* above background */
+  cursor: pointer;
+  transition: none;      /* remove hover transition */
+}
+.view-btn:hover {
+opacity: 0.40;
+}
+
+
+
+
+.view-btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 13.05rem;         /* distance from bottom */
+  left: 84%;             /* center horizontally */
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6); /* dark rectangle */
+  color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 4px;    /* slightly rounded corners */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+     
+  text-align: center;
+  z-index: 10;           /* above background */
+  cursor: pointer;
+  transition: none;      /* remove hover transition */
+}
+.view-btn1:hover {
+opacity: 0.40;
+}
+.mobile-br {
+  display: none;
+}
+.view-btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 13.05rem;         /* distance from bottom */
+  left: 92%;             /* center horizontally */
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6); /* dark rectangle */
+  color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 4px;    /* slightly rounded corners */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+     
+  text-align: center;
+  z-index: 10;           /* above background */
+  cursor: pointer;
+  transition: none;      /* remove hover transition */
+}
+.view-btn2:hover {
+opacity: 0.40;
+}
+@media (max-width: 1440px) { 
+.card4 {
+  width: 20rem !important;
+  top: -29.5rem !important;
+  height: 29.5rem !important;
+}
+.card1 {
+  left: 3rem !important;
+}
+.card3 {
+  left: -18.5rem !important;
+  width: 32rem !important;
+}
+.card2 {
+  top: 1rem !important;
+  left: 3rem !important;
+  height: 16rem !important;
+}
+.grid {
+  top: -1rem !important;
+}
+.ijm {
+  position: relative;
+  width: 10rem !important;
+  top: -1rem !important;
+  left: -0.75rem !important;
+
+}
+.card {
+  top: -6.5rem !important;
+  height: 3rem !important;
+}
+.industry {
+font-size: 0.8rem !important;
+ 
+  
+}
+.industry1 {
+
+  font-size: 0.8rem !important;
+ 
+  
+}
+.industry2 {
+
+font-size: 0.8rem !important;
+}
+.skills {
+  left: -22rem !important;
+  width: 56rem !important;
+}
+.card5 {
+  left: -22rem !important;
+  width: 56rem !important;
+}
+.skills2 {
+  width: 20rem !important;
+  left: 37rem !important;
+}
+.skills2 h1{
+  top: 1rem !important;
+}
+.card6 {
+  width: 20rem !important;
+  left: 37rem !important;
+  
+}
+.card6 h1 {
+  top: 1.5rem !important;
+}
+}
+@media (max-width: 1800px) { 
+.card4 {
+  width: 26rem;
+}
+
+
+}
+
+@media (max-width: 1600px) {
+  .grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 0.75rem;
+  width: 50%;
+  max-width: 900px;
+  left: 1rem;
+  top: 1rem;
+}
+ .card1 {
+    position: relative;
+    left: 1rem;
+    width: 18rem;
+    height: 12rem;
+
+ }
+ 
+  .card1 p {
+  position: relative;
+  top: -0.50rem;
+  left: -0.75rem;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 2rem;
+}
+.card3 {
+  height: 12rem;
+  width: 36rem;
+}
+.perspect {
+  font-size: 0.7rem !important;
+  position: relative;
+top: -2.2rem;
+}
+.perspect1 {
+  font-size: 0.7rem !important;
+  position: relative;
+top: -2.5rem;
+}
+
+.card2 {
+  height: 18rem;
+  width: 32rem;
+  left: 1rem;
+}
+.card2 h3 {
+  font-size: 1rem;
+}
+.card2 p {
+  font-size: 0.85rem;
+}
+.underline {
+  position: absolute;
+  top: 4.5rem;
+  width: 7.5rem;
+}
+.page-number {
+  
+  font-size: 1rem;
+  
+}
+.pagination button{
+  font-size: 1rem;
+}
+.ijm {
+  position: relative;
+  width: 12rem;
+  top: -1.5rem;
+  left: -2.45rem;
+
+}
+.card{
+  top: -7.25rem;
+   left: 12rem;
+    width: 23rem;
+    height: 5rem;
+}
+
+.social-links {
+  margin-top: -1.75rem;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;
+  gap: 4px;                 /* space between icons */
+}
+.social-links a {
+  margin: 0 2rem;
+  font-size: 2.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.card4 {
+  top: -31.5rem;
+  left: 18rem;
+  height: 30.8rem;
+  width: 25rem;
+}
+
+.title-box {
+  position: absolute;
+  top: 50px;
+  left: 3rem;
+  background-color: #000;
+  padding: 8px 14px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+  padding-right: 6px;
+}
+
+.title-box h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 1rem;
+  position: relative;
+  left: -6px;
+}
+.card4 h3 {
+  font-size: 1rem;
+}
+
+.industry {
+font-size: 1rem;
+ 
+  
+}
+.industry1 {
+
+  font-size: 1rem;
+ 
+  
+}
+.industry2 {
+
+font-size: 1rem;
+ 
+  
+  
+}
+.grid1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2 minmax(250px, 1fr));
+  gap: 2rem;
+  width: 45% !important;
+  max-width: 900px;
+  left: 1rem;
+  top: 1rem;
+   
+}
+ 
+.skills {
+
+  width: 59rem;
+  top: -23rem;
+
+}
+
+.skills2 {
+  top: -41rem;
+  width: 25rem;
+  left: 38rem;
+}
+.skills2 h1{
+  font-size: 2rem !important;
+}
+
+.card5 {
+  width: 59rem;
+  height: 20rem;
+}
+.card5-img {
+  width: 100%;
+  height: auto;          /* let height adjust naturally */
+  object-fit: contain;   /* show full image */
+}
+.paginationcorner2 button
+    {
+      position: relative;
+      top: 5rem;
+      left: 0.5rem;
+     
+    }
+
+    .skills2 {
+  top: -41rem;
+  width: 25rem;
+  left: 38rem;
+}
+.view-btn,
+  .view-btn2
+  {
+   
+    left: 88%;
+    top: 4.5rem;
+  }
+.card6 {
+  top: -49rem;
+  width: 25rem;
+  left: 38rem;
+}
+.card6 h1 {
+  position: relative;
+  top: 2.5rem;
+  font-size: 2rem !important;
+}
+ }
+
+
+
+@media (max-width: 768px) {
+
+  /* Reset large left / bottom positioning */
+  .card {
+    position: relative;
+    left: -1.5rem;
+    bottom: 0 !important;
+    transform: none !important;
+    width: 85%;
+    
+    margin: 20px auto;
+  }
+
+.card5 {
+    position: relative;
+    top: 14rem;       /* adjust as needed */
+    left: 0 !important;
+    margin: 20px auto;
+    width: 95% !important;
+  
+    /* remove fixed height */
+    padding: 0;       /* optional: remove extra padding */
+    display: inline-block;  /* allow container to shrink-wrap content */
+    height: 180px;
+}
+
+.card5-img {
+    width: 150%;       /* fit container width */
+    height: auto;      /* maintain aspect ratio */
+    object-fit: contain; /* prevent cropping */
+    display: block;
+}
+.card4{
+  position: relative;
+    top: -1rem;
+    left:  -1.5rem ;
+    bottom: 0 !important;
+    transform: none !important;
+    
+    margin: 20px auto;
+    height: 500px;
+
+} 
+.card6{
+   position: relative;
+  top: -17rem;
+  left: 0.1rem !important;
+    bottom: 0 !important;
+    transform: none !important;
+    width: 95% !important;
+    height: 200px;
+    
+    margin: 20px auto;
+}
+.card6 h1 {
+  position: relative;
+  top: 0.75rem;
+}
+.skills2 {
+  position: relative;
+  top: -40rem;
+  left: 0.25rem;
+    bottom: 0 !important;
+    transform: none !important;
+    width: 95%;
+    height: 200px;
+    
+    margin: 20px auto;
+
+}
+.skills2 h1 {
+  position: relative;
+  top: -2rem;
+}
+.industry {
+font-size: 1rem;
+ 
+  
+}
+.industry1 {
+
+  font-size: 1rem;
+ 
+  
+}
+.industry2 {
+
+font-size: 1rem;
+ 
+  
+  
+}
+  .card2{
+    position: relative;
+    top: 10rem;
+    left:  -1.5rem;
+    bottom: 0;
+    transform: none ;
+   
+    margin: 20px auto;
+
+  }
+.skills {
+   position: relative;
+  height: 550px;
+  left: 0.1rem !important;
+  top: 15rem;
+    bottom: 0 !important;
+    transform: none !important;
+    width: 450px;
+    margin: 20px auto;
+}
+  .card3 {
+    display: none;
+  }
+.card1{
+  position: relative;
+  width: 250px;
+  height: 175px;
+  left: -8rem !important;
+    bottom: 0 !important;
+    transform: none !important;
+    
+    margin: 20px auto;
+}
+.card1 p {
+  position: relative;
+  top: -1rem;
+  font-size: 1.7rem;
+  text-align: center;
+  white-space: nowrap;
+  left: -1rem;
+}
+.ijm {
+ display: none;
+}
+ .card{
+  top: -30rem;
+   left: -1.5rem !important;
+ }
+  /* Stack grids into single column */
+  .grid,
+  .grid1 {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    left: 0;
+    top: 0;
+  }
+
+  /* Skills grid → 2 columns on mobile */
+  .skills-grid {
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  /* Reduce slideshow height */
+
+
+  /* Resize profile & project images */
+  .profile-img,
+  .project-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Fix pagination position */
+  .paginationcorner2 button
+    {
+      position: relative;
+      top: 2rem;
+      left: 0.5rem;
+        width: 25px;
+        height: 5px;
+        font-size: 0.7rem;  /* smaller text */
+        padding: 2px 4px;   /* less padding */
+    }
+
+/* Small view buttons with fitted text */
+.view-btn
+ {
+    left: 92%;
+    top: 2.10rem;
+
+    width: 45px;
+    height: 15px;
+    padding: 0;            /* remove extra padding */
+    font-size: 0.65rem;
+    line-height: 24px;     /* center text vertically */
+    text-align: center;    /* center text horizontally */
+    border-radius: 4px;    /* rounded corners */
+    box-sizing: border-box; /* ensures padding/border fits inside */
+}
+
+
+.view-btn1
+ {
+    left: 92%;
+    top: 2.10rem;
+
+    width: 45px;
+    height: 15px;
+    padding: 0;            /* remove extra padding */
+    font-size: 0.65rem;
+    line-height: 24px;     /* center text vertically */
+    text-align: center;    /* center text horizontally */
+    border-radius: 4px;    /* rounded corners */
+    box-sizing: border-box; /* ensures padding/border fits inside */
+}
+.view-btn2{
+    left: 92%;
+    top: 2.10rem;
+
+    width: 45px;
+    height: 15px;
+    padding: 0;            /* remove extra padding */
+    font-size: 0.65rem;
+    line-height: 24px;     /* center text vertically */
+    text-align: center;    /* center text horizontally */
+    border-radius: 4px;    /* rounded corners */
+    box-sizing: border-box; /* ensures padding/border fits inside */
+}
+  /* Adjust big headings */
+  .hi {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+}
+@media (max-width: 320px) {
+  /* Reset large positioning */
+
+  .grid {
+    grid-template-columns: 1fr !important;
+    top: -2rem !important;
+  }
+  
+ 
+ .skills2 { 
+  position: relative;
+  border-radius: 12px;
+      top: -26rem;
+      left: -5.5rem !important;
+    transform: none !important;
+   
+    width: 300px !important;
+   height: 150px !important;
+  }
+  .skills2 h1 {
+    position: relative;
+top: -3.5rem;
+font-size: 1.3rem!important;
+  }
+  .card4 {
+    border-radius: 12px;
+    top: 7rem !important;
+    transform: none !important;
+    left:  -6.25rem !important;
+    width: 300px !important;
+   height: 375px !important;
+  }
+.title-box {
+position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  background-color: #000;
+  padding: 8px 50px;
+  border-radius: 4px;
+  display: inline-block;
+  width: 133px;
+  height: 30px;
+  padding-right: 6px;
+}
+
+.title-box h3 {
+  color: #fff;
+  margin: 0;
+margin-top: 1.5rem;
+margin-left: -1rem;
+  position: relative;
+  left: 1rem;
+   white-space: nowrap;
+}
+
+  .card4 h3 {
+    top: -1.5rem;
+     position: relative;
+     left: -2rem;
+    font-size: 0.8rem !important;
+  }
+  .industry,
+  .industry1,
+  .industry2 {
+    position: relative;
+    top: -1.5rem;
+    left: -2rem;
+    font-size: 0.65rem !important;
+ 
+}
+
+
+   .card2{
+    border-radius: 12px;
+    position: relative;
+    top: 8rem !important;
+    left:  -6.25rem !important;
+    width: 300px !important;
+   height: 210px;
+   
+  }
+  .card2 h3 {
+    top: -1.5rem;
+     position: relative;
+     left: -2rem;
+    font-size: 0.8rem;
+  }
+  .page-number {
+  margin-top: 0rem;
+  color: white;
+  font-size: 0.8rem;
+  
+}
+.pagination.corner1 button{
+  font-size: 0.7rem;
+}
+  .underline {
+    position: absolute;
+    top: 2.7rem;
+  left: 1.10rem;
+  width: 97px;
+  height: 2px;
+  background-color: yellow;
+  margin: 2px 0 3px;
+  border-radius: 2px;
+}
+.pagination.corner{
+position: absolute;
+top: 1.25rem;
+left: 14.25rem;
+}
+.page-number {
+  
+  font-size: 0.7rem;
+  
+}
+.pagination button{
+  font-size: 0.8rem;
+}
+ .mobile-br {
+    display: block;
+    content: "";
+    line-height: 0; /* optional, adjust spacing if needed */
+  }
+  .card2 p {
+    top: -1.75rem;
+    position: relative;
+    font-size: 0.6rem;     /* slightly bigger for readability */
+    line-height: 1.6;       /* better spacing between lines */
+    text-align: left;  /* easier to read than justified */
+            /* breathing space on sides */
+    left: -2rem;
+    white-space: normal;
+  overflow-wrap: break-word;
+  }
+.card{
+  position: absolute;
+  top: 11rem !important;
+    left:  -6.25rem !important;
+    width: 300px !important;
+}
+
+.social-links {
+  margin-top: -1.2rem;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;
+  gap: 4px;                 /* space between icons */
+}
+
+.social-links a {
+  font-size: 2rem !important;
+  color: #333;
+  transition: color 0.3s ease;
+}
+  .card1 {
+    width: 200px;
+    height: 150px;
+    left: -6rem !important;
+    margin: 15px auto;
+  }
+
+
+  .card1 p {
+    font-size: 1.3rem;
+    text-align: center;
+    white-space: nowrap;
+    top: -1.25rem;
+    left: -1rem;
+  }
+
+  .card5 {
+    position: relative;
+    left: -5.5rem !important;
+    top: 14rem !important;
+    width: 290px !important;
+    border-radius: 12px !important;
+    height: 250px;
+    margin: 15px auto;
+  }
+
+  .card5-img {
+    width: 300px;
+  height: 100%;
+  object-fit: cover;   /* fills container, may crop */
+  display: block; 
+  
+  border-radius: 12px !important;
+  }
+
+  .card6 {
+    position: relative;
+    border-radius: 12px;
+      top: -18rem !important;
+      left: -5.5rem !important;
+    transform: none !important;
+   
+    width: 290px !important;
+   height: 150px !important;
+   white-space: nowrap;
+  }
+
+  .card6 h1 {
+position: relative;
+top: -0.75rem;
+font-size: 1.3rem !important; 
+left: -0.25rem;
+  }
+
+  .skills {
+    border-radius: 12px;
+    position: relative;
+    top: 15.5rem !important;
+    left: -5.5rem !important;
+    width: 300px !important;
+    height: 400px !important;
+  }
+.skill-box{
+  font-size: 0.6rem;
+   white-space: nowrap;
+}
+  .skill-box i {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+.iconify {
+  font-size: 1.2rem;
+}
+
+  .skills-grid {
+    position: relative;
+    top: -0.05rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    left: 0.5rem;
+  }
+
+  .profile-img,
+  .project-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .paginationcorner2 button {
+    width: 20px;
+    height: 4px;
+    font-size: 0.6rem;
+    top: 1rem;
+    left: 0;
+  }
+
+  .view-btn,
+  .view-btn1
+  {
+    width: 40px;
+    height: 14px;
+    font-size: 0.6rem;
+    left: 88%;
+    top: 2.175rem;
+  }
+.view-btn2 {
+  width: 40px;
+    height: 14px;
+    font-size: 0.6rem;
+    left: 60%;
+    top: 10rem;
+}
+  .hi {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+}
