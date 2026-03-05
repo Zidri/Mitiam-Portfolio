@@ -1628,7 +1628,11 @@ body {
     grid-template-columns: 1fr !important;
     top: -2.5rem !important;
   }
-  
+  .grid1 {
+ 
+ top: 8rem !important;
+ 
+  }
  
  .skills2 { 
   position: relative;
