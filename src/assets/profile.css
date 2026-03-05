@@ -1800,15 +1800,15 @@ left: 14.25rem;
   .card5 {
     position: relative;
     left: -4rem !important;
-    margin-top: -32.75rem !important;
-    width: 290px !important;
+    margin-top: -31.5rem !important;
+    width: 300px !important;
     border-radius: 12px !important;
     height: 250px;
     margin: 15px auto;
   }
 
   .card5-img {
-    width: 300px;
+    width: 300px !important;
   height: 100%;
   object-fit: cover;   /* fills container, may crop */
   display: block; 
@@ -1819,7 +1819,7 @@ left: 14.25rem;
   .card6 {
     position: relative;
     border-radius: 12px;
-      margin-top: -11.75rem !important;
+      margin-top: -10.5rem !important;
       left: -4rem !important;
     transform: none !important;
    
@@ -1838,7 +1838,7 @@ left: -0.25rem;
   .skills {
     border-radius: 12px;
     position: relative;
-    margin-top: -66.5rem !important;
+    margin-top: -65.5rem !important;
     left: -4rem !important;
     width: 300px !important;
     height: 400px !important;

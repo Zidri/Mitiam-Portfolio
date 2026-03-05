@@ -254,7 +254,7 @@ onBeforeUnmount(() => {
            <span class="mobile-br"></span>
             in  Computer Engineering. 
            
-         I also hold a diploma in the same field.
+         I also hold a  diploma degree in the same field.
           </p>
           <p v-else-if="page === 2">
             I enjoy exploring UI/UX design using Figma and Adobe XD, experimenting
