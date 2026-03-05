@@ -95,22 +95,7 @@ const year = new Date().getFullYear()
   text-align: center;  /* text aligned to right corner */
   margin: 0;
 }
-@media (max-width: 430px) { 
 
-  .footer {
- position: absolute !important;
- margin-top: 133.5rem !important;
- width: 30rem !important;
-  }
-.footer-text {
-  left: -2rem !important;
-}
-  .footer-text,
-  .nav-links,
-  .nav-brand {
-    font-size: 0.9rem;
-  }
-}
 
 @media (max-width: 320px) { 
 
