@@ -1899,3 +1899,284 @@ left: -0.25rem;
   }
 
 }
+
+@media (max-width: 520px) {
+  /* Reset large positioning */
+body {
+    overflow-x: hidden;   /* prevents horizontal scroll */
+}
+  .grid {
+    grid-template-columns: 1fr !important;
+    top: -2.5rem !important;
+  }
+  .grid1 {
+ 
+ top: 12rem !important;
+ 
+  }
+ 
+ .skills2 { 
+  position: relative;
+  border-radius: 12px;
+      margin-top: -20.5rem !important;
+      left: -4rem !important;
+    transform: none !important;
+   
+    width: 300px !important;
+   height: 100px !important;
+  }
+  .skills2 h1 {
+    position: relative;
+top: -6.5rem !important;
+font-size: 1.3rem!important;
+  }
+  .card4 {
+    border-radius: 12px;
+    margin-top: 30rem !important;
+    transform: none !important;
+    left:  -4.75rem !important;
+    width: 300px !important;
+   height: 375px !important;
+  }
+.title-box {
+position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  background-color: #000;
+  padding: 8px 50px;
+  border-radius: 4px;
+  display: inline-block;
+  width: 133px;
+  height: 30px;
+  padding-right: 6px;
+}
+
+.title-box h3 {
+  color: #fff;
+  margin: 0;
+margin-top: 1.5rem;
+margin-left: -1rem;
+  position: relative;
+  left: 1rem;
+   white-space: nowrap;
+}
+
+  .card4 h3 {
+    top: -1.5rem;
+     position: relative;
+     left: -2rem;
+    font-size: 0.8rem !important;
+  }
+  .industry,
+  .industry1,
+  .industry2 {
+    position: relative;
+    top: -1.5rem;
+    left: -2rem;
+    font-size: 0.67rem !important;
+ 
+}
+
+
+   .card2{
+    border-radius: 12px;
+    position: relative;
+    margin-top: 6rem !important;
+    left:  -4.75rem !important;
+    width: 300px !important;
+   height: 210px;
+   
+  }
+  .card2 h3 {
+    top: -1.5rem;
+     position: relative;
+     left: -2rem;
+    font-size: 0.8rem;
+  }
+  .page-number {
+  margin-top: 0rem;
+  color: white;
+  font-size: 0.8rem;
+  
+}
+.pagination.corner1 button{
+  font-size: 0.7rem;
+}
+  .underline {
+    position: absolute;
+    top: 2.7rem;
+  left: 1.10rem;
+  width: 97px;
+  height: 2px;
+  background-color: yellow;
+  margin: 2px 0 3px;
+  border-radius: 2px;
+}
+.pagination.corner{
+position: absolute;
+top: 1.25rem;
+left: 14.25rem;
+}
+.page-number {
+  
+  font-size: 0.7rem;
+  
+}
+.pagination button{
+  font-size: 0.8rem;
+}
+ .mobile-br {
+    display: block;
+    content: "";
+    line-height: 0; /* optional, adjust spacing if needed */
+  }
+  .card2 p {
+    top: -1.75rem;
+    position: relative;
+    font-size: 0.6rem;     /* slightly bigger for readability */
+    line-height: 1.6;       /* better spacing between lines */
+    text-align: left;  /* easier to read than justified */
+            /* breathing space on sides */
+    left: -2rem;
+    white-space: normal;
+  overflow-wrap: break-word;
+  }
+.card{
+  position: absolute;
+  margin-top: 18rem !important;
+    left:  -4.75rem !important;
+    width: 300px !important;
+}
+
+.social-links {
+  margin-top: -1.2rem;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;
+  gap: 4px;                 /* space between icons */
+}
+
+.social-links a {
+  font-size: 2rem !important;
+  color: #333;
+  transition: color 0.3s ease;
+}
+  .card1 {
+   
+    width: 200px;
+    height: 150px;
+   
+    left: -5rem !important;
+  }
+
+
+  .card1 p {
+    font-size: 1.3rem;
+    text-align: center;
+    white-space: nowrap;
+      margin: 1.25rem auto 0 auto !important;
+  }
+
+  .card5 {
+    position: relative;
+    left: -4rem !important;
+    margin-top: -31.5rem !important;
+    width: 300px !important;
+    border-radius: 12px !important;
+    height: 250px;
+    margin: 15px auto;
+  }
+
+  .card5-img {
+    width: 300px !important;
+  height: 100%;
+  object-fit: cover;   /* fills container, may crop */
+  display: block; 
+  
+  border-radius: 12px !important;
+  }
+
+  .card6 {
+    position: relative;
+    border-radius: 12px;
+      margin-top: -10.5rem !important;
+      left: -4rem !important;
+    transform: none !important;
+   
+    width: 300px !important;
+   height: 100px !important;
+   white-space: nowrap;
+  }
+
+  .card6 h1 {
+position: relative;
+top: -4rem !important;
+font-size: 1.3rem !important; 
+left: -0.25rem;
+  }
+
+  .skills {
+    border-radius: 12px;
+    position: relative;
+    margin-top: -65.5rem !important;
+    left: -4rem !important;
+    width: 300px !important;
+    height: 400px !important;
+  }
+.skill-box{
+  font-size: 0.6rem;
+   white-space: nowrap;
+}
+  .skill-box i {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+.iconify {
+  font-size: 1.2rem;
+}
+
+  .skills-grid {
+    position: relative;
+    top: -0.05rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    left: 0.5rem;
+  }
+
+  .profile-img,
+  .project-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .paginationcorner2 button {
+    width: 20px;
+    height: 4px;
+    font-size: 0.6rem;
+    top: 1rem;
+    left: 0;
+  }
+
+  .view-btn,
+  .view-btn1
+  {
+    width: 40px;
+    height: 14px;
+    font-size: 0.6rem;
+    left: 88%;
+    top: 2.175rem;
+  }
+.view-btn2 {
+  width: 40px;
+    height: 14px;
+    font-size: 0.6rem;
+    left: 60%;
+    top: 10rem;
+}
+  .hi {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+}
