@@ -1345,7 +1345,7 @@ font-size: 1rem;
   }
 
 }
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   /* Reset large positioning */
 
   .grid {
@@ -1692,7 +1692,7 @@ margin-left: -1rem;
     position: relative;
     top: -1.5rem;
     left: -2rem;
-    font-size: 0.65rem !important;
+    font-size: 0.67rem !important;
  
 }
 
@@ -1793,8 +1793,8 @@ left: 14.25rem;
     font-size: 1.3rem;
     text-align: center;
     white-space: nowrap;
-    top: -1.25rem;
-    left: -1rem;
+    margin-top: 1.25rem !important;
+    left: -1rem !important;
   }
 
   .card5 {
