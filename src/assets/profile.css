@@ -1793,8 +1793,7 @@ left: 14.25rem;
     font-size: 1.3rem;
     text-align: center;
     white-space: nowrap;
-    margin-top: 1.25rem !important;
-    left: -1rem !important;
+      margin: 1.25rem auto 0 auto !important;
   }
 
   .card5 {
