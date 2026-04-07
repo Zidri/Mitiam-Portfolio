@@ -413,7 +413,7 @@ onBeforeUnmount(() => {
 <!-- Conditional View button (separate div for rectangle) -->
 <a
   v-if="activeSlide === 1"
-  href="https://xd.adobe.com/view/8337cbf9-9911-45b9-9260-72c241ef3a81-d664/screen/0a1e131b-0148-4512-8858-80151c6f1cf8/"
+  href="https://yellow-card-five.vercel.app/"
   target="_blank"
   class="view-btn1"
 >
